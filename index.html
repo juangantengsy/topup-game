@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up Diamond | GamerZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>💎 GamerZone Top Up</h1>
+    <p>Cepat, Aman, dan Terpercaya</p>
+  </header>
+
+  <section class="games">
+    <h2>Pilih Game Favorit Kamu</h2>
+    <div class="game-list">
+      <div class="game-card" data-game="Mobile Legends">
+        <img src="https://i.imgur.com/ZxQd9bN.png" alt="MLBB" />
+        <p>Mobile Legends</p>
+      </div>
+      <div class="game-card" data-game="PUBG Mobile">
+        <img src="https://i.imgur.com/H6r46o0.png" alt="PUBG" />
+        <p>PUBG Mobile</p>
+      </div>
+      <div class="game-card" data-game="Free Fire">
+        <img src="https://i.imgur.com/UpW9rp1.png" alt="Free Fire" />
+        <p>Free Fire</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Form Top Up</h2>
+    <form id="topupForm">
+      <label for="gameName">Game yang dipilih:</label>
+      <input type="text" id="gameName" placeholder="Klik salah satu game di atas" readonly required />
+
+      <label for="gameId">ID Game + Server (Jika Ada):</label>
+      <input type="text" id="gameId" placeholder="Contoh: 12345678 (1234)" required />
+
+      <label for="nominal">Pilih Nominal:</label>
+      <select id="nominal" required>
+        <option value="">-- Pilih --</option>
+        <option value="86 Diamond">86 Diamond - Rp20.000</option>
+        <option value="172 Diamond">172 Diamond - Rp38.000</option>
+        <option value="257 Diamond">257 Diamond - Rp55.000</option>
+      </select>
+
+      <label for="pembayaran">Metode Pembayaran:</label>
+      <select id="pembayaran" required>
+        <option value="">-- Pilih --</option>
+        <option value="Dana">Dana</option>
+        <option value="Pulsa">Pulsa</option>
+        <option value="QRIS">QRIS</option>
+      </select>
+
+      <div id="infoPembayaran" class="info-box">
+        <p><strong>Info Pembayaran:</strong></p>
+        <p id="metodeText">Silakan pilih metode pembayaran</p>
+      </div>
+
+      <label for="nomor">Nomor WhatsApp Anda:</label>
+      <input type="text" id="nomor" placeholder="08xxxxxxxxxx" required />
+
+      <button type="submit">Top Up Sekarang</button>
+    </form>
+  </section>
+
+  <section class="kontak">
+    <h2>Kontak Penjual</h2>
+    <p>No WA Penjual: <strong>0877-5856-9438</strong></p>
+    <a href="https://wa.me/6281234567890" target="_blank" class="wa-btn">Chat Penjual via WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 GamerZone - Powered by TopUpKing.ID</p>
+  </footer>
+</body>
+</html>

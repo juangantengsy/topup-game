@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #111;
+  text-align: center;
+  padding: 2em 1em;
+  border-bottom: 3px solid #00ff99;
+}
+
+header h1 {
+  margin: 0;
+  color: #00ff99;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 0.5em;
+}
+
+.games {
+  text-align: center;
+  padding: 2em;
+}
+
+.game-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.game-card {
+  background: #222;
+  padding: 1em;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  border: 2px solid transparent;
+}
+.game-card:hover {
+  transform: scale(1.05);
+  background: #00ff99;
+  color: #000;
+}
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.form-section {
+  padding: 2em;
+  background: #1a1a1a;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, select {
+  padding: 0.8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  background: #00ff99;
+  border: none;
+  padding: 1em;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #00cc7a;
+}
+
+.info-box {
+  display: none;
+  background: #2b2b2b;
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: -0.5em;
+}
+
+.kontak {
+  text-align: center;
+  padding: 2em;
+}
+
+.wa-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 1.5em;
+  background: #25d366;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.wa-btn:hover {
+  background: #1ebc5b;
+}
+
+footer {
+  text-align: center;
+  background: #111;
+  padding: 1em;
+  font-size: 0.9em;
+  border-top: 2px solid #00ff99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 80%;
+  }
+
+  form {
+    width: 90%;
+    padding: 0 1em;
+  }
+
+  .wa-btn {
+    width: 90%;
+    font-size: 1em;
+  }
+}
